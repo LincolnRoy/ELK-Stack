@@ -8,3 +8,6 @@ chkconfig docker on
 yum install -y git
 curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
+git clone https://github.com/LincolnRoy/ELK-Stack.git
+cd /ELK-Stack/
+docker-compose -f docker-compose.yaml up -d
